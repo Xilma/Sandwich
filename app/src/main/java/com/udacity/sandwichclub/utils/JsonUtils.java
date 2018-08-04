@@ -44,10 +44,8 @@ public class JsonUtils {
 
             String image = jsonObject.getString(IMAGE_URL);
 
-            JSONObject ingredients = jsonObject.getJSONObject(INGREDIENTS);
-
             //ingredients array
-            JSONArray jsonIngArray = ingredients.getJSONArray(INGREDIENTS);
+            JSONArray jsonIngArray = jsonObject.getJSONArray(INGREDIENTS);
 
             List<String> ingredientList = new ArrayList<>();
             //iterate through array
